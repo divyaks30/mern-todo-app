@@ -33,6 +33,13 @@ app.get("/", (req, res) => {
 });
 
 const PORT = process.env.PORT || 5000;
+const mongoose = require("mongoose");
+
+app.get("/db-status", (req, res) => {
+  res.json({
+    state: mongoose.connection.readyState,
+  });
+});
 
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
