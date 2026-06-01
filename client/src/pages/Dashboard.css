@@ -1,0 +1,179 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  min-height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: linear-gradient(
+    135deg,
+    #667eea,
+    #764ba2
+  );
+}
+
+.todo-card {
+  width: 550px;
+
+  background: white;
+
+  padding: 35px;
+
+  border-radius: 25px;
+
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+
+.todo-card h1 {
+  color: #1f3b5f;
+
+  margin-bottom: 25px;
+
+  font-size: 42px;
+}
+
+.input-row {
+  display: flex;
+
+  gap: 12px;
+
+  margin-bottom: 25px;
+}
+
+.input-row input {
+  flex: 1;
+
+  padding: 15px;
+
+  border: 1px solid #ddd;
+
+  border-radius: 12px;
+
+  font-size: 16px;
+}
+
+.add-btn {
+  background: #667eea;
+
+  color: white;
+
+  border: none;
+
+  border-radius: 12px;
+
+  padding: 15px 24px;
+
+  cursor: pointer;
+
+  font-size: 18px;
+
+  font-weight: bold;
+}
+
+.task-list {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 15px;
+}
+
+.task-item {
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+}
+
+.task-left {
+  display: flex;
+
+  align-items: center;
+
+  gap: 10px;
+
+  font-size: 24px;
+}
+
+.delete-btn {
+  background: #ff4d4d;
+
+  color: white;
+
+  border: none;
+
+  width: 40px;
+
+  height: 40px;
+
+  border-radius: 10px;
+
+  cursor: pointer;
+
+  font-size: 18px;
+}
+
+.completed {
+  text-decoration: line-through;
+  color: gray;
+}
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-bottom: 15px;
+}
+
+.profile-icon {
+  width: 55px;
+  height: 55px;
+
+  border-radius: 50%;
+
+  background: #667eea;
+
+  color: white;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 24px;
+  font-weight: bold;
+
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+.logout-btn {
+  background: #ff4d4d;
+
+  color: white;
+
+  border: none;
+
+  padding: 10px 18px;
+
+  border-radius: 10px;
+
+  cursor: pointer;
+
+  font-weight: bold;
+}
+
+.welcome-text {
+  color: #1f3b5f;
+
+  margin-bottom: 20px;
+
+  font-size: 20px;
+
+  font-weight: 600;
+}
